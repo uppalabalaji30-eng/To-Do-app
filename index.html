@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <h1>My To-Do App</h1>
+        </div>
+        <button id="themeBtn" type="button">🌙 Dark mode</button>
+    </header>
+    <main class="container">
+        <!-- Date Section -->
+        <section class="date-section">
+            <h2>Today's Date</h2>
+            <span id="todayDate"></span>
+        </section>
+        <!-- Quote Section -->
+        <section class="quote-section">
+            <h2>Quote of the Day</h2>
+            <p id="quote"></p>
+        </section>
+        <!-- Add Task Section -->
+        <section class="task-section">
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task"
+                    required
+                >
+                <input
+                    type="time"
+                    id="taskTime"
+                >
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+        <!-- Task List -->
+        <section class="list-section">
+            <div class="list-header">
+                <h2>My Tasks</h2>
+                <button id="clearBtn" type="button">
+                    Clear All
+                </button>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
